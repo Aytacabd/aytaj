@@ -101,7 +101,7 @@
   }
 
   .stars, .stars-small, .stars-tiny {
-    position: absolute; inset: 0; pointer-events: none;
+    position: fixed; inset: 0; pointer-events: none; z-index: 1;
   }
   .star {
     position: absolute;
@@ -471,7 +471,7 @@
   /* ==========================================================
      SECTION base
      ========================================================== */
-  section { padding: 5.5rem 2rem; position: relative; }
+  section { padding: 5.5rem 2rem; position: relative; z-index: 2; }
   .container { max-width: 1200px; margin: 0 auto; }
 
   .section-header {
@@ -542,7 +542,7 @@
     width: 1px; height: 80px;
     background: linear-gradient(to bottom, transparent, var(--gold));
   } */
-   .about { background: var(--paper); position: relative; }
+   .about { background: transparent; position: relative; }
 
 
   .about-grid {
@@ -685,6 +685,7 @@
     padding: 2rem 2rem;
     overflow: hidden;
     position: relative;
+    z-index: 2;
     border-top: 1px solid rgba(184,135,74,0.3);
     border-bottom: 1px solid rgba(184,135,74,0.3);
   }
@@ -714,7 +715,7 @@
   /* ==========================================================
      LETTER / NOTE SECTION
      ========================================================== */
-  .letter { background: var(--paper); }
+  .letter { background: transparent; }
 
   .letter-scene {
     position: relative;
@@ -824,7 +825,7 @@
   /* ==========================================================
      EXPERIENCE / TIMELINE
      ========================================================== */
-  .experience { background: var(--paper); }
+  .experience { background: transparent; }
 
   .timeline {
     position: relative;
@@ -904,7 +905,7 @@
   /* ==========================================================
      EDUCATION
      ========================================================== */
-  .education { background: var(--paper); }
+  .education { background: transparent; }
   .edu-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -966,7 +967,7 @@
   /* ==========================================================
      PUBLICATIONS
      ========================================================== */
-  .publications { background: var(--paper); }
+  .publications { background: transparent; }
   .pub-list {
     max-width: 900px;
     margin: 0 auto;
@@ -1023,7 +1024,7 @@
   /* ==========================================================
      AWARDS
      ========================================================== */
-  .awards { background: var(--paper); }
+  .awards { background: transparent; }
   .awards-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -1078,7 +1079,7 @@
      SKILLS
      ========================================================== */
   .skills {
-    background: var(--paper);
+    background: transparent;
     color: var(--ink);
     position: relative;
     overflow: hidden;
@@ -1144,7 +1145,7 @@
   /* ==========================================================
      HOBBIES
      ========================================================== */
-  .hobbies { background: var(--paper); position: relative; overflow: hidden; }
+  .hobbies { background: transparent; position: relative; overflow: hidden; }
   .hobbies-lily-bg {
     position: absolute;
     bottom: -80px; right: -80px;
@@ -1385,7 +1386,7 @@
   /* ==========================================================
      LANGUAGES
      ========================================================== */
-  .languages { background: var(--paper); }
+  .languages { background: transparent; }
   .lang-row {
     max-width: 900px;
     margin: 0 auto;
@@ -1433,14 +1434,12 @@
      CONTACT / FOOTER
      ========================================================== */
   .contact {
-    background:
-      radial-gradient(ellipse at center, #fdfaf0 0%, var(--paper) 70%);
+    background: transparent;
     color: var(--ink);
     text-align: center;
     padding: 5.5rem 2rem 3rem;
     position: relative;
     overflow: hidden;
-    border-top: 1px solid rgba(184,135,74,0.25);
   }
   .contact .stars { position: absolute; inset: 0; }
   .contact-inner { position: relative; z-index: 1; max-width: 720px; margin: 0 auto; }
